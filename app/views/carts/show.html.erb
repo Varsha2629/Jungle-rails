@@ -1,5 +1,11 @@
+<% if enhanced_cart.empty? %>
+  
+  <div class="alert alert-info" role="alert">
+  <h3>Please add item in your cart!</h3> <br>
+  </div>
+  <%= link_to "Back to Home", root_path, class: 'btn btn-lg btn-primary' %>
 
-
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
@@ -52,3 +58,4 @@
   </div>
 
 </section>
+<% end %>
