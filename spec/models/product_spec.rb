@@ -10,7 +10,7 @@ RSpec.describe Product, type: :model do
   describe 'Validations' do
      it "is valid with valid attributes" do
       @product = Product.new(name: 'Teddy', price: 19.00, quantity: 10, category: @category )
-      @product.save!
+      @product.save
 
       expect(@product).to be_present
     end
