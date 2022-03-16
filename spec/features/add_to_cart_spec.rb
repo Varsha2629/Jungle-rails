@@ -22,8 +22,8 @@ scenario "They can update the cart by clicking the add-to-cart button" do
   visit root_path
   expect(page).to have_content 'My Cart (0)'
   first('.product button').click
-  expect(page).to have_content 'My Cart (1)'
   save_and_open_screenshot
+  expect(page).to have_content 'My Cart (1)'
   
 end
 

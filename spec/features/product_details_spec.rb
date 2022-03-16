@@ -19,8 +19,8 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
   scenario "They can see all products detail page" do
     visit root_path
     first('.product a').click
+    save_and_open_screenshot
     expect(page).to have_css 'article.product-detail'
-    #save_and_open_screenshot
   end
 end
 
